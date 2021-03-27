@@ -21,3 +21,18 @@ function Contador(props){
         </React.Fragment>
     );  
 }
+
+function App(){
+    return (
+        <React.Fragment>
+            <h1>Vote no jogo seu favorito</h1>
+            <Contador titulo="Rainbow Six Siege"/>
+            <Contador titulo="Apex Legends"/>
+            <Contador titulo="Overwatch"/>
+        </React.Fragment>
+    );
+}
+
+ReactDOM.render(
+    React.createElement(App, null, null), container
+);
